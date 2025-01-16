@@ -14,7 +14,7 @@ Syntax:adbdeleter [target_file_path] [mode]
 
 Options:
 
-fast (and insecure mode):3 write zeros and 1 android rm command
+fast (and insecure mode):1 write zeros and 1 android rm command
 
 safe (slow but secure mode):37 write randoms 1 write zeros and 1 android rm command
 

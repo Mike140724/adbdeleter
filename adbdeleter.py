@@ -14,7 +14,7 @@ if len(sys.argv) != 3:
         print("AdbDeleter v1.0")
         print("Syntax: adbdeleter [filepath] [mode]")
         print("Options:")
-        print("fast (and insecure mode):3 write zeros and 1 android rm command")
+        print("fast (and insecure mode):1 write zeros and 1 android rm command")
         print("safe (slow but secure mode):37 write randoms 1 write zeros and 1 android rm command")
         sys.exit()
 target = sys.argv[1]
@@ -62,7 +62,7 @@ try:
             device.shell("rm "+target)
             print("Complete")
             print("Secure erase completed")
-#以3次写零和1次安卓rm命令擦除目标文件 Erase Target File With 1 Write Zeros And 1 Android rm Command
+#以1次写零和1次安卓rm命令擦除目标文件 Erase Target File With 1 Write Zeros And 1 Android rm Command
         elif mode == "fast":
             print("Getting target file size")
             targetfilesize = device.shell("wc "+target).split(" ")[2]
