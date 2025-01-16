@@ -38,7 +38,7 @@ adbdelter /sdcard/notimportfile.txt fast
 
 ## Principle
 
-This tool use 38 times android dd command to delete yourc data in target file,so use to delete files your files may not be recoverable.
+This tool use 38 times android dd command to delete your data in target file,so use to delete files your files may not be recoverable.
 
 ## Questions
 
