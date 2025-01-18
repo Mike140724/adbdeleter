@@ -63,13 +63,16 @@ if mode != "safe":
         sys.exit()
 
 #检查参数
-if "f" in parameters:
-    try:
-        if device.shell("ls /system/bin/su").split[2] == " No such file or directory":
-            print("Your device is not rooted or you have not given adb root permissions")       
-            sys.exit()
-    except TypeError:
-        root_permission = True
+try:
+    if "f" in parameters:
+        try:
+            if device.shell("ls /system/bin/su").split[2] == " No such file or directory":
+                print("Your device is not rooted or you have not given adb root permissions")       
+                sys.exit()
+        except TypeError:
+            root_permission = True
+except NameError:
+    pass
 
 #擦除函数 Erase Function
 def erase(target,randomerasetimes):
