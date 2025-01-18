@@ -10,9 +10,13 @@ pip
 
 ## Usage
 
-Syntax:adbdeleter [target_file_path] [mode]
+Syntax:adbdeleter [options] [target_file_path] [mode]
 
 Options:
+
+-f(Force but dangerous and need device rooted)delete your files in root mode
+
+Modes:
 
 fast (and insecure mode):1 write zeros and 1 android rm command
 
